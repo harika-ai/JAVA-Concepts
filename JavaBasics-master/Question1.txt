@@ -1,0 +1,13 @@
+String and String buffer Introduction :
+
+* most commonly used object in any application is string 
+* String objects are immutable i.e, cannot change the object content.
+* String buffer objects are mutable i.e, we can change the object content.
+* Object s is immutable ---> after concatenation another object will create but it is not assigned it to any reference i.e, address in heap memory because of this garbage collector remove the unreferenced objects thats why string objects are immutable 
+*Object s1 is mutable ---> after appending the object, the content is going to be in previous object only. new object wont create 
+
+
+		
+
+
+	

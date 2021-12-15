@@ -1,0 +1,46 @@
+Wrapper class:
+
+The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+autoboxing and unboxing feature convert primitives into objects and objects into primitives automatically. The automatic conversion of primitive into an object is known as autoboxing and vice-versa unboxing.
+
+Usage:
+We need to deal with objects many times instead of variables.
+ex: Collections, Serialization, synchronization
+
+Observation:
+* Change the value in method 
+	java supports call by value mechanism instead of call by reference.
+	so if we pass a primitive value it will not change because it wont refer any address. so we pass these primitive values through reference variables(object variable) by using object.
+
+* Serialization:
+	If we have int values convert the objects through wrapper class.Then objects are going to be converted as streams by serialisation.
+
+* Synchronisation:
+	Works with objects in multi threading. 
+	java.util package provides utility classes to deal with many objects
+* Java collection framework:
+	It works with object only.
+	All classes of collection framework are arraylist,linkedlist,vvector,hashset, linkedhashset, treeset,priority queue.
+
+
+
+Primitive Type 					Wrapper class
+
+int						Integer
+char						character
+double						Double
+string						String
+boolean						Boolean
+long						Long
+short						Short
+byte						Byte
+
+
+
+
+Strictfp :
+It is a keyword. It cannot be applied on abstract methods,variables and constructors
+
+Can be applied on classes,interfaces,methods.
+
+

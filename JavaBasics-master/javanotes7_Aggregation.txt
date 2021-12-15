@@ -1,0 +1,11 @@
+Has-A- relationship ---> One object depends on another object.
+If class have an entity reference then it is known as aggrregation.
+Note : Code reuse is best achieved by aggregation when "there is a no relationship".
+Inheritance --> should be used only if the relationship is Is-A-relationship maintained throughout the lifetime of the objects involved.Otherwise aggregation is best choice.
+
+Aggregation example : 	In student class while calling the marks of each student from marks table by using student id as a foreign key in marks table. 
+			Primary key --> Student id is the primary key of student table.
+
+Student Table			    Marks Table
+
+

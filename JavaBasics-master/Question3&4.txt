@@ -1,0 +1,20 @@
+Importance of string constant pool area:
+
+If any repeating object value for more than one object then no need to create multiple objects.
+
+scp is there for only storing unique literals. we cannot perform any operation in scp(Ex: concat)
+
+So from above for storing unique literals for different objects we use scp
+
+If one object want to change its value then all dependent objectsgoing to effect.
+
+To overcome this we use immutability nature of string.
+
+why scp concept is available only for string object not for string buffer?
+
+* Because string is immutable for that we need scp to store unique literals for multiple objects which we dont want to change later.
+ where as string buffer is mutable for this there is no need of scp. why because each individual object may have same or different values.
+
+*string objects are immutable where as string buffer objects are mutable.
+
+Note: All wrapper class objects are immutable we can use same data for several objects upto some instant.

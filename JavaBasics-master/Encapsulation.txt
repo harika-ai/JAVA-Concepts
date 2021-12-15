@@ -1,0 +1,19 @@
+Encapsulation:
+
+Protecting data members and providing access to the data members throgh member functions i.e, getters and setter methods is called encapsulation.
+
+In order to encapsulate a program variables must be declared as private but methods should be public.
+
+If a program is not encapsulated data members will be under user's control. In such case user may misuse the data members by assigning invalid data values.
+
+But, If a program is encapsulated then data members will be under the developer control.In such cases developer deciides which value is valid or invalid and which value to allow or not allowed.
+
+By using encapsulation as a basis, we can achieve "javabean" class.
+
+JavaBean class : Developing a class, where each data members will have a sepertae getters and setter methods, this type of classes are called javabean classes.
+
+JavaBean classes are used for developing "Enterprise Javabean(EJB)" applications.
+
+Encapsulation in Java is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
+
+ 

@@ -1,0 +1,16 @@
+Methods of string class:
+
+1.public char charAt(int index)
+2.public String concat(String s)
+3.public boolean equals(Object o)
+4.public boolean equalIgnoreCase(Object o)
+5.public boolean isEmpty()
+6.public int length()
+7.public String replace(char old,char new)
+8.public String substring(int begin)
+9.public String substring(int begin, int end)
+10.public int indexOf(char ch)
+11.public int lastIndexOf(char ch)
+12.public String tolowerCase()
+13.public String toUpperCase()	
+14.public String trim();

@@ -1,0 +1,21 @@
+1.Difference between String and String buffer?
+	mutability and immutability
+	equals() method
+2. String object creation(Heap and string constant pool area)
+3.Importance of string constant pool area
+4.Importance of string and string buffer
+5.constructors of string class
+6.methods of string class
+7.Creation of our own immutable class
+8. Final vs Immutability
+9. Need of string buffer
+10. String buffer class constructor
+11. Methods of string buffer
+12.Need of string builder
+13.Difference between string buffer and string builder
+14.Difference betn string vs string buffer vs string builder
+15. Method chaining
+
+
+
+

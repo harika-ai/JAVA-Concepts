@@ -1,0 +1,16 @@
+Serialisation:  Serialization is a mechanism of converting the state of an object into a byte stream. 
+
+Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object.
+
+Explaination:
+After usage of the object, Garbage collector will automatically destroy the object within JVM.
+If  we want to reuse the same object within same JVM or in anther JVM we need to save it. For security purpose the object is converted into bytestream by using Serialisation.
+This byte stream is saved in local files.
+While reusing the object using deserialisation again converting into object from byte stream.
+
+Note: Serialisable which is a marker interface in java.
+There is no method implementation or method body thats why called as marker interface 
+Ex: Serialisable, Clonable,Comparable
+
+
+

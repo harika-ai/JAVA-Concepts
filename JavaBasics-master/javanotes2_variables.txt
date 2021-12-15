@@ -1,0 +1,25 @@
+stack memory           Heap memory
+public static void met1() {
+		i = 30;
+		System.out.println(i);
+
+main()			i 50
+{			met1() 	-- i becomes 30		stack pool area
+20			main()   		
+30			met2()  i is 20 ---- obj name is var
+20
+20
+
+
+
+Class loader
+JVM
+
+Note : Every obj will have connection with stack pool area.
+	Non static will present in object and all static members are present in stack pool area thatis why obj will have connection with stack pool area.
+
+Note: During re initialisation of static variables into the static method no need of usage of static key word but for non static variables, while reinitialising we should create an obj 
+
+
+Note:
+Static variables are called class variables, if we change the value of sv in any method the value will be changed in entire class because we have only 1 copy of static variable.

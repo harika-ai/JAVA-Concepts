@@ -1,0 +1,21 @@
+constructors of string class:
+
+String s = new String();
+String s = new String(String literal);
+String s = new String(StrigBuffer sb);
+String s = new String(StringBuilder sb1);
+String s = new String(char[] ch);
+String s = new String(Byte[] b);
+
+Note: 
+char[] ch ={'J','a','v','a'};
+String s = new String(ch);
+Output: Java
+
+String s = new String(Byte[] b);
+Byte[] b = {97,98,99,100};
+String s = new String(b);
+Output: abcd
+
+
+

@@ -1,0 +1,16 @@
+Creation of our own immutable class:
+
+Note: Immutable class wont change the content of existing object. If we need to reuse that existing object with the same content then we use the immutable class
+If the content is changed by passing the literals then immutable class creates new object. 
+
+
+Final vs Immutability:
+
+Final is applicable for variable i.e, final variable.
+Final is not applicable for object. Immutable is applicable for object.
+Immutable is not applicable for variable.
+
+In final, reinitialisation is not possible i.e, replacement of the total content is not possible by using final.
+But by using final,the content of the object will be changed by  using concatenation.
+
+

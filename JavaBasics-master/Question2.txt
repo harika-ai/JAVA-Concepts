@@ -1,0 +1,31 @@
+ String object creation(Heap and string constant pool area)
+
+String s = new String("durga");
+ whenever new operator comes one new object will be created in heap area
+And whenever we pass a literal in string then object will be created in string const pool area
+but, in scp objects not meant for garbage collector because of this if the same content is there in another string literal then new object wont create
+that will use the previous object content implicitly.
+String s1 = "durga";
+s1 object wont create in scp because of s object literal already we have scp object with same content-durga
+s1 object wont create in heap memory as we are not using new keyword.
+
+
+
+Note: Upto 1.6 version scp is present in method area, From 1.7v onwards scp is present in heap area.
+Because of this scp memory utilisation is achieved
+
+String st = new String("durga");
+st.concat("software");
+String st1 = st.concat("software");
+whenever obj is created in heap memory reference is pointing heap memory obj only eventhough one more obj is created in scp by literal.
+
+After concat of string objects resultant string object going to store in heap area if we are not assigning any reference then it is going to be destroyed by garbage collector, else it wont
+
+
+Note: scp is used for storing literals(content).
+
+
+Note: In final we can change the object data by using concatenation.But, we cannot replace the object value by reinitialisation.
+In immutable, we cannot change the object value but we can replace the object value by using reference through new object creation.
+
+Note: scp is there for only storing unique literals. we cannot perform any operation in scp(Ex: concat)

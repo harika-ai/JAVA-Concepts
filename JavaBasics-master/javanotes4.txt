@@ -1,0 +1,54 @@
+UML --- unified modelling language also called as class diagram.
+
+
+There are two types of modifiers in Java: access modifiers and non-access modifiers.
+There are many non-access modifiers, such as static, abstract, synchronized, native, volatile, transient, etc. 
+
+Access Modifiers in Java :
+Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+
+** when we are trying to access private members from outside of class there will be compile time error. Thats why when we are making any class constructor as private we cannot create the instance of that class from outside of that class.
+Note: If you make any class constructor private, you cannot create the instance of that class from outside the class. 
+Note: A class cannot be private or protected except nested class.
+
+Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
+
+Access Modifier	  within class		within package		outside package by subclass only	outside package
+Private			Y			N			N					N
+Default			Y			Y			N					N
+Protected		Y			Y			Y					N
+Public			Y			Y			Y					Y
+
+
+
+final-- It is a keyword. We can use this keyword for variable, method, class
+
+
+final variable :
+if a variable declared as final then it acts like a constant variable
+so no one have access to reinitialise this variable.
+Note: static variable is not a final variable because for static variable reinitialisation is possible.
+but for both static and final variables there are only single copies.
+
+final method:
+If we make any method as final, we cannot override it.
+We can inherit the final method to sub class.
+
+final class:
+We cannot inherit the final class as the sub class acquires all the properties of the final class and we may change them.
+We can inherit the final class from another parent class and sub class becomes final class.
+
+What is blank or uninitialized final variable?
+A final variable that is not initialized at the time of declaration is known as blank final variable.
+
+If you want to create a variable that is initialized at the time of creating object and once initialized may not be changed, it is useful. For example PAN CARD number of an employee.
+
+It can be initialized only in constructor.
+
+A static final variable that is not initialized at the time of declaration is known as static blank final variable. It can be initialized only in static block.
+
+Can we declare a constructor as final?
+
+No, Because constructor is never inherited.

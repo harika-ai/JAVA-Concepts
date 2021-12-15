@@ -1,0 +1,145 @@
+9.Need of string buffer:
+
+If content is keep on changing continuosly i.e, not fixed then go for stringBuffer.
+Ex1: String s = "Durga";
+s = s.concat("soft");
+s.concat("ware");
+
+Note : In above after each concatenation another new objects will be created. 
+
+Ex2: StringBuffer s = "Durga";
+s = s.concat("soft");
+s.concat("ware");
+
+Note: From above, By using stringBuffer after each concatenation that changes will be done in existing object only. 
+Because of this memory utilisation will be done for frequent changes of objects.
+Performance also improved.
+
+Length- It is used to represent no. of characters in string.
+
+Capacity- It is used for how many characters we are able to hold in object.
+
+Note: Capacity is not used in string because of string immutability.
+
+
+10.String buffer class constructor:
+
+A. StringBuffer sb = new StringBuffer();
+Here default stringBuffer capacity is 16.
+new capacity = (current capacity + 1 )*2
+
+B. StringBuffer obj = new StringBuffer(int capacityvalue);
+if you know in advance capacity of string then we need to use it.
+Here the capacity value is fixed.
+
+C.StringBuffer obj = new StringBuffer(String s);
+
+
+Methods of stringBuffer:
+public int length();
+public int capacity(stringref.charAt(indexOf(String)));
+public void setCharAt(int index, char newChar(A));
+public StringBuffer append(String s); -- method Overloading
+Note: In above method we can pass byte,int,long,float type parameters
+public StringBuffer insert(int index,String s); -- here also in place of string we can give int,char,float,double.thats why these 2 methods are called as overloaded methods
+public StringBuffer delete(int begin, int end);
+public StringBuffer deleteCharAt(int index);
+public void setLength(int length);
+public void ensureCapacity(int capacity);
+public void trimToSize();
+Note: Above methods are synchronised methods. StringBuffer all methods are synchronised.
+
+
+
+
+Same methods we will use in stringBuilder also but that are non synchronised.
+
+
+
+Need of string builder:
+The methods of the stringBuilder are asynchronised. It was came at 1.5 version.
+when multiple threads calls on string object at a time then go for stringBuilder.
+
+It is used for multithreading.
+
+
+where as in stringBuffer every thread will call string object as one by one so because of this performance will reduce.thats why we are using StringBuilder for multithreading purpose.
+
+
+
+Difference between string buffer and string builder:
+
+*In all above StringBuffer methods,constructors and syntaxes
+	we need to keep 'Builder' in place of 'Buffer'
+
+and one more thing to represent the proper method signature for synchronized and asynchronized, we ususally write as below:
+public Asynchronized StringBuilder append(String s);
+public Synchronized StringBuffer append(String s);
+
+
+StringBuffer:
+Most of the methods of sbuf are sync.
+At a time only one thread is allowed to operate on stringBuffer object.Hence, it is thread safe
+Because of above reason remaining threads req to operate on sbuff object.
+	Hence relative operation is slow.
+
+It was came at 1.0 version.
+
+StringBuilder :
+No method is sync.
+At a time multiple threads allowed to operate on stringBuilder object.Hence, it is not thread safe
+Because of above reason remaining threads no need to req to operate on sbuilder object.
+	Hence relative operation is high.
+
+It was came at 1.5 version.
+
+
+
+Difference betn string vs string buffer vs string builder:
+
+String:
+When the content of the obj is fixed then go for strring.
+it is always threadsafe.
+All immutable classes are thread safe because no one able to change the existing content of object. 
+
+
+
+string buffer and string builder:
+when the content of the object is changed continuously then go for sbuff and sbuild.
+when only 1 thread needs to operate go for sbuff. for multiple threads go for sbuild.
+
+
+
+Method chaining:
+
+
+
+stringBuilder append()
+stringBuilder reverse()
+stringBuilder insert()
+
+In above all methods the obj type is same.
+If we want to perform all the operations for same object we have to follow as below.
+StringBuilder obj = new StringBuilder();
+obj.append("durga").reverse("durga").insert("gardu");
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

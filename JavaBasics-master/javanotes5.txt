@@ -1,0 +1,37 @@
+To avoid the level2 programming problem i.e, after compilation or before going to execution constructor will help us to initialise the nsv values.
+-- if a method depends on the nsv for performing an operation then only we use the nsm.
+
+
+Constructor:
+
+Constructor is a type of method which gets executed during obj creation. Constructor name must be similar to class name
+there are 2 types of constructors
+-- constructor without arguments(default constructor)
+-- constructor with arguments ( parameterized constructor)
+
+The purpose of constructor is to initialise the instance variable. 
+Purpose of constructor overloading is to create same class object in multiple ways.
+In case of multiple constructors, there may be a code repetition. we must avoid this code repetition otherwise it leads to maintainance problem.
+In order to avoid code repetition and achieve the code reusability we go for constructor chaining.
+Invoking constructor from another constructor is called constructor chaining.Constructor chaining can be achieved by using 'call to this' statement.
+Note: In case developer doesnot creates a constructor, compiler will create a default constructor.
+
+Difference between constructor and method:
+
+Construor 										method
+used to initialise the state of an obj.							used to expose the behaviour of an obj.
+mustnot have any return type.								must have a return type.
+invoked implicitly.									invoked explicitly.
+java compiler throwbacks default constructor						it is not provided by compiler at any case.
+if you dont have any constructor in a class.
+constructor name should be same as class name.						It's may be or maynot be same as class name
+
+
+
+Copy Constructor: We can copy the values from one obj to another obj.we used it in C++ but in java we dont have this.
+
+Note : Deep copy constructor: 
+whenever we need own copy constructor, we dont want to use default implementation--based on our need-- creation of obj will be done.
+shallow copy constructor: 
+For the shallow copy approach, we only copy field values, therefore the copy might be dependant on the original object.
+In the deep copy approach, we make sure that all the objects in the tree are deeply copied, so the copy isn't dependant on any earlier existing object that might ever change.

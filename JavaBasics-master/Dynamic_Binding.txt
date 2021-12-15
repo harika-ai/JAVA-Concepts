@@ -1,0 +1,30 @@
+Binding: Connecting a method call to the method body is known as binding.
+
+There are two types of binding
+
+Static Binding (also known as Early Binding).
+Dynamic Binding (also known as Late Binding).
+
+
+Static Binding --- When type of the object is determined at compiled time(by the compiler), it is known as static binding.
+static binding is also called as early binding.
+If there is any private, final or static method in a class, there is static binding.
+Note: If any method having the private, final and static keywords then method overriding is not possible.Because of this connecting method call to method body determine at compile time.
+Ex: Method overloading
+
+Dynamic Binding -- when the type of obj is determined at run time.
+
+
+
+
+Downcasting: 
+
+When Subclass type refers to the object of Parent class, it is known as downcasting. If we perform it directly, compiler gives Compilation error. If you perform it by typecasting, ClassCastException is thrown at runtime. But if we use instanceof operator, downcasting is possible.
+
+Dog d=new Animal();//Compilation error  
+If we perform downcasting by typecasting, ClassCastException is thrown at runtime.
+
+Dog d=(Dog)new Animal();  
+//Compiles successfully but ClassCastException is thrown at runtime.
+
+But if we use instanceof operator, downcasting is possible.

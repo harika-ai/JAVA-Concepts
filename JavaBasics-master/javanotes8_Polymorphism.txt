@@ -1,0 +1,91 @@
+Polymorphism in Java is a concept by which we can perform a single action in different ways. Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" means forms. So polymorphism means many forms.
+
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.
+
+If you overload a static method in Java, it is the example of compile time polymorphism.
+Run time polymorphism is called dynamic method dispatch.
+
+
+Polymorphism:
+If we want to perform one task in multiple ways then we go for polymorphism.
+There are two types
+-- compile time polymorphism -- Method Overloading
+-- Runtime polymorphism -- Method Overriding
+
+Method Overloading :
+If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+Advantage: It increases readability.
+Ex: mathematical operations like addition subtraction and multiplication.
+
+* There are two ways to overload the method in java
+
+By changing number of arguments
+By changing the data type
+In Java, Method Overloading is not possible by changing the return type of the method only.
+
+
+
+Method Overriding : --- Runtime polymorphism
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+Usage:
+Method overriding is used to provide the specific implementation of a method which is already provided by its superclass.
+Method overriding is used for runtime polymorphism.
+
+Rules for Java Method Overriding:
+The method must have the same name as in the parent class method.
+The method must have the same parameter as in the parent class method.
+There must be an IS-A relationship (inheritance).
+
+Can we override a static method?
+No, a static method cannot be overridden. It can be proved by runtime polymorphism.
+It is because the static method is bound with class whereas instance method is bound with an object. Static belongs to the class area, and an instance belongs to the heap area.
+
+Method Overloading									Method Overriding
+
+1)Method overloading is used to increase the readability of the program.		Method overriding is used to provide the specific implementation of the method 												that is already provided by its super class.
+2)Method overloading is performed within class.						Method overriding occurs in two classes that have IS-A (inheritance) 											relationship.
+3)In case of method overloading, parameter must be different.				In case of method overriding, parameter must be same.
+4)Method overloading is the example of compile time polymorphism.			Method overriding is the example of run time polymorphism.
+5)In java, method overloading can't be performed by changing return			Return type must be same or covariant in method overriding.
+type of the method only. Return type can be same or different in method 
+overloading. But you must have to change the parameter.				 
+
+
+
+Instance initialiser block : ---Is nothing but a constructor.
+
+There are three places in java where you can perform operations:
+method
+constructor
+block
+
+Instance Initializer block is used to initialize the instance data member. It run each time when object of the class is created.
+The initialization of the instance variable can be done directly but there can be performed extra operations while initializing the instance variable in the instance initializer block.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

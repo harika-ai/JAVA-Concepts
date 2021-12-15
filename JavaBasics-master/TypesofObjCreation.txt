@@ -1,0 +1,70 @@
+Different ways to create an Object in Java:
+
+Class is a template or blueprint from which objects are created. Different ways are :
+
+* Use new keyword
+* Using "newInstance()" method of a class
+* Using "newInstance()" method of constructor
+* Using Object Deserialisation
+* Using Object cloning - clone() method.
+
+
+* Use new keyword:
+From this we create object as below
+                ClassName Obj = new ClassName(); --- Default Constructor
+		ClassName Obj = new ClassName(Parameters); --- Parameterized Constructor
+
+
+* Using "newInstance()" method of a class:
+String packageName = "fully qualified PackageName" ;
+Class classObj = Class.forName(packageName);
+Note:  forName-: It is a static method used for loading class from fully qualified PackageName
+Student object = (Student)classObj.newInstance();
+
+
+* Using "newInstance()" method of constructor:
+			Constructor<ClassName> constructor;
+			constructor = ClassName.class.getConstructor();
+
+Note: We should import "java.lang.reflect.Constructor " package
+Getting runtime exception in eclipse while executing example.Need to look once.
+
+* Using Object Deserialisation :
+
+------------------------------------------------------------------------
+	refer Program in Eclipse and serialisatin concept in notepad.
+------------------------------------------------------------------------
+
+
+* Using Object cloning - clone() method :
+
+Clone method is used to create a copy of an existing object.
+In order to use the clone() method the corresponding class should have implemented a cloneable interface.
+Again it is a marker interface.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

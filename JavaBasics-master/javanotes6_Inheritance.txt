@@ -1,0 +1,80 @@
+INHERITANCE:
+
+Acquiring the sub class from the super class. Sub class takes all the nsm which is kept in the super class by using "extends" keyword.
+Only the nsm goes from one class to another class.Because nsm have multiple copies.
+In super class one copy is used and in sub class another copy is used.
+Static members does not pass through one class to another class because they have only one copy in entire class.
+Here we dont use call to this statement, we go for call to super statement i.e, super();
+this(..) -> it will be used in current class for constructor chaining
+super(..) -> Here we are taking the nsm from super class i.e, from another class not in the current class.
+
+Types of Inheritance :
+Single inheritance -- only one sub class is taking arguments from super class.
+Multi level Inheritance -- More than one sub class taking the arguments from super class.
+Ex: class A, claa B, class C ---> class B extends A, class C extends B.
+Hierarchial Inheritance -- More than one sub class taking the arguments from same super class.
+Ex: class A, claa B, class C ---> class B extends A, class C extends A.
+Hybrid Inheritance -- Combination of single and multi level inheritance.
+ Ex: class A, claa B, class C, class D ---> class B extends A, class C extends A,  class D extends C
+
+*** Multiple Inheritance: This is not possible in java through class because ambiguity problem (Diamond problemm) in constructor chaining.
+because one subclass inheriting properties from 2 super classes thats why if the same method is present in 2 super classes then sub class gets confused to take which methods implementation.
+
+Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class.
+
+Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. So whether you have same method or different, there will be compile time error.
+
+
+Note:
+During inheritance process constructor chaining is compulsory.
+Constructor chaining between super class and sub class can be achieved by using 'call to super' statement.
+Constructor chaining betn super class and subclass happens in 2 ways.
+1.Implicit way -- In case super class contains default constructor, then compiler adds "call to super statement without arguments" in subclass constructor.
+2.Explicit way -- In case super class contains constructor with arguments, then developer adds "call to super statement with arguments" in subclass constructor.
+
+Purpose of Inheritence :
+Code reusability between the classes i.e, 
+If multipe classes demands the same code instead of repeating the same code, define the common code in single class and reuse the code in all other classes through inheritance.Thats why it is called as reusability between classes.
+**
+Inheritance is also called as Is-A(is a relationship)
+
+
+Realtime example of inheritance :
+
+					Vehicles
+
+		Automobiles					Pulled vehicles
+
+
+	car   			bus  			cart 			rikshaw
+
+Automobiles and Pulled Vehicles are subclasses of Vehicles.
+Vehicles are the base class or superclass of Automobiles and pulled Vehicles.
+Car and Bus are sub-classes or derived classes of Automobiles.
+Automobiles are the base class or superclass of Car and Bus.
+SUPER class also called as Base class or Parent class.
+Sub class also called as derived class/ extended class/ child class.
+The extends keyword: The keyword extends is used by child class while inheriting the parent class.
+
+
+The super keyword: The super keyword is similar to this keyword. The following are some cases where we use super keyword :
+
+There are some situations where the members of the superclass and the subclass have the same names, then the super keyword is used to differentiate the members of the superclass from the members of the subclass.
+To invoke the superclass constructor from the subclass.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

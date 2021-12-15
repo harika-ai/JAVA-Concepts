@@ -1,0 +1,6 @@
+Multiple classes are possible in Java .
+But during compilation and execution there is no rule that class name is same as file name.
+we can give any new name also as a java file name.
+After compilation .java file is converted as byte code.
+this is stored in based on number of classes present in java file as number of class files.
+Note: java file name can be anything but class file name must be same as class name.

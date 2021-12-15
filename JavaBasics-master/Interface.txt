@@ -1,0 +1,152 @@
+Interface:
+
+An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+Usage:
+To achieve abstraction in java and multiple inheritence in java.
+It can be used to achieve loose coupling.
+
+Note:
+Interface can have only abstract methods and variables.i.e, Interface only have declared methods not defined methods.
+It cannot be instantiated just like the abstract class.
+
+Since Java 8, we can have default and static methods in an interface.
+
+Since Java 9, we can have private methods in an interface.
+
+Hence we are unable to define only protected methods in an Interface.
+
+Relation between class and interface:
+
+Picture in javanotes folder.
+
+multiple inheritance is not supported through class but it is possible through interface
+
+All variables declared inside interface are implicitly public, static and final. 
+All methods declared inside interfaces are implicitly public and abstract, even if you don't use public or abstract keyword. 
+Interface can extend one or more other interface. 
+Interface cannot implement a class, but a class can implement interface.
+Java interface also represents IS-A relationship. 
+
+Difference between Abstract and Interface:
+Abstract class 									Interface
+
+1) Abstract class can have abstract and non-abstract methods.			Interface can have only abstract methods. Since Java 8, it can have default and static 										methods also.
+2) Abstract class doesn't support multiple inheritance.				Interface supports multiple inheritance.
+3) Abstract class can have final, non-final, static and non-static variables.	Interface has only static and final variables.
+4) Abstract class can provide the implementation of interface.			Interface can't provide the implementation of abstract class
+
+Note:
+Why we are using static methods inside interface instead of class ??
+* Class is very costly heavy component. For the class we need to create an object except for abstract class.
+Class has constructor and methods and variables thats why we said it as heavy component.(Because of creation of object for the initialisation we need constructor).
+
+where as Interface is light component because no need to create an object, no constructor less cost
+
+Therefore for static methods no need to create an object thats why going for interface.
+
+
+why we are using default methods in interface instead of defined methods in abstract class ??
+
+
+** Default methods implementation wont afffect the implemented classes.
+where as defined method implementation will effect the all the extended classes. 
+
+method overriding is possible between two classes when method is non static.
+method overriding is also possible between two interfaces when method is non static, It is also possible while class implementing an interface as below
+/ Interfaces are Overrided
+public void display() {
+    
+      GfG.super.display();
+       
+      gfg.super.display();
+   }
+
+
+Note: In interface default method functionality not visible to the implemented classes until we override the method with public keyword and call the method with below syntax
+
+(Interface name).super.(default method name of interface)
+
+why we are using abstract class even though we are achieving 100% abstraction through interface ??
+
+**An abstract class is a good choice if we are using the inheritance concept since it provides a common base class implementation to derived classes.
+An abstract class is also good if we want to declare non-public members. In an interface, all methods must be public.
+If we want to add new methods in the future, then an abstract class is a better choice.
+Because if we add new methods to an interface, then all of the classes that already implemented that interface will have to be changed to implement the new methods.
+
+If we want to create multiple versions of our component, create an abstract class. 
+Abstract classes provide a simple and easy way to version our components. 
+By updating the base class, all inheriting classes are automatically updated with the change. 
+Interfaces, on the other hand, cannot be changed once created. 
+If a new version of an interface is required, we must create a whole new interface.
+Abstract classes have the advantage of allowing better forward compatibility. 
+Once clients use an interface, we cannot change it; if they use an abstract class, we can still add behavior without breaking the existing code.
+
+If we want to provide common, implemented functionality among all implementations of our component, use an abstract class. 
+Abstract classes allow us to partially implement our class, whereas interfaces contain no implementation for any members.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The main advantage of default methods is without effecting implementation classes we can add new functionality to the interface (backward compatibility).
+
+3. Interface default methods are by default available to all implementation classes. An implementation class can use these default methods directly or can override.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+Object class:
+
+The Object class is the parent class of all the classes in java by default. 
+
+Object obj=getObject();//we don't know what object will be returned from this method  
+
+Object cloning:
+
+The object cloning is a way to create exact copy of an object. The clone() method of Object class is used to clone an object.
+
+The java.lang.Cloneable interface must be implemented by the class whose object clone we want to create. If we don't implement Cloneable interface, clone() method generates CloneNotSupportedException.
+
+The clone() method is defined in the Object class. Syntax of the clone() method is as follows:
+
+protected Object clone() throws CloneNotSupportedException.
+
+The clone() method saves the extra processing task for creating the exact copy of an object. If we perform it by using the new keyword, it will take a lot of processing time to be performed that is why we use object cloning.  
